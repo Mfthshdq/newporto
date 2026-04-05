@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/newporto/static/css/main.947f68fb.css",
-    "main.js": "/newporto/static/js/main.ebd1ea3f.js",
+    "main.js": "/newporto/static/js/main.c40f7de7.js",
     "static/js/453.6a54098e.chunk.js": "/newporto/static/js/453.6a54098e.chunk.js",
     "index.html": "/newporto/index.html",
     "main.947f68fb.css.map": "/newporto/static/css/main.947f68fb.css.map",
-    "main.ebd1ea3f.js.map": "/newporto/static/js/main.ebd1ea3f.js.map",
+    "main.c40f7de7.js.map": "/newporto/static/js/main.c40f7de7.js.map",
     "453.6a54098e.chunk.js.map": "/newporto/static/js/453.6a54098e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.947f68fb.css",
-    "static/js/main.ebd1ea3f.js"
+    "static/js/main.c40f7de7.js"
   ]
 }

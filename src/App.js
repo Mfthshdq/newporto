@@ -10,16 +10,7 @@ import ToolsAndSkills from './Pages/ToolsAndSkills';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Home />}></Route>
-      <Route path='/about' element={<Abouts />}></Route>
-      <Route path='/service' element={<Services />}></Route>
-      <Route path='/portofolio' element={<Portofolios />}></Route>
-      <Route path='/contact' element={<Contacts />}></Route>
-      <Route path='/website-portofolio' element={<ProjectsPage />}></Route>
-      <Route path='/landingpage-portofolio' element={<LandingPages />}></Route>
-      <Route path='/toolsandskills' element={<ToolsAndSkills />}></Route>
-    </Routes>
+    <h1 style={{color: "white"}}>Test berhasil</h1>
   );
 }
 
