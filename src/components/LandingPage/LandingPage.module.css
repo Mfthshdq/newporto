@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-top: 24px;
+  animation: fadeUp 1s ease forwards;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 500px;
+  height: auto;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projectImage {
+  border-radius: 8px 8px 0 0;
+  width: 450px;
+  height: 240px;
+  margin-top: 24px;
+}
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.marquee p {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.learnMoreButton {
+  height: 50px;
+  width: 200px;
+  border: none;
+  font-weight: bold;
+  background-color: #ff4c60;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.learnMoreButton:hover {
+  background-color: #e04354;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+}
+
+.close {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: auto;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}

@@ -1,0 +1,36 @@
+.homepage {
+  background-color: #0f1123;
+  color: white;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f75c5c;
+  margin-left: 32px;
+}
+
+.nav {
+  display: flex;
+  margin-right: 32px;
+}
+
+.nav .link {
+  margin: 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.nav .link:hover {
+  color: #f75c5c;
+}

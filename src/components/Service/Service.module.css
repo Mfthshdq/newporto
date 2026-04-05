@@ -1,0 +1,128 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.services {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.service_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.service_cards {
+  display: flex;
+  gap: 20px;
+}
+
+.service_card {
+  background: #1a1a1a;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service_card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.service_card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.service_card:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.service_card:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.service_card h3 {
+  margin-bottom: 10px;
+}
+
+.service_card p {
+  opacity: 0.7;
+}
+
+.service_card:hover {
+  transform: translateY(-8px);
+  background: #222;
+}
+
+.order_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #ff4c60;
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.order_button:hover {
+  background: #e94356;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: auto;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
+}

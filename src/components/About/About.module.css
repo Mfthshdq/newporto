@@ -1,0 +1,57 @@
+.aboutpage {
+  background-color: #0f1123;
+  color: white;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.about_section {
+  background-color: #1d2037;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about_section h1 {
+  color: #ff4c60;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about_section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d1d1d1;
+}
+
+.highlight {
+  color: #ff4c60;
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: auto;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}

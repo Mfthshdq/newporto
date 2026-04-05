@@ -1,0 +1,126 @@
+body {
+  background-color: #0f1123;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  gap: 20px;
+  text-align: center;
+}
+
+.hero {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero span {
+  color: #ff4c60;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  background: #00d8ff;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00bcd4;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  animation: fadeUp 1s ease forwards;
+}
+
+.project_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpp 1s ease forwards;
+}
+
+@keyframes fadeUpp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #222;
+}
+
+.contact {
+  margin-bottom: 60px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: auto;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
